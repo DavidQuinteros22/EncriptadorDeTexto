@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <img src="imagenes/1163474.png" alt="logo de encriptador" width="161" height="173">
+        </header>
+         <main>
+        <section class="ingreso-texto" >
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese su texto Aqui"></textarea>
+            <div class="botones">
+                <p>❗ Solo escribe minusculas y sin acentos</p>
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="salida-texto">
+            <div class="img">
+                <img src="imagenes/4905858.svg" alt="icono">
+                <h2>Ningun mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <textarea class="mensaje" cols="18" rows="18"></textarea>
+            <button class="copiar var-copiar" onclick="copiar()">Copiar</button>
+        </section>
+    
+    </main>
+
+    <footer>
+        <p>Sitio web desarrollado por David Quinteros</p>
+    </footer>
+
+    <script src="encriptador.js"></script>
+
+    </body>
+</html>
